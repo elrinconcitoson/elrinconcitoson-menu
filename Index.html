@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Rinconcito Son - Menú y Pedidos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>El Rinconcito Son</h1>
+        <nav>
+            <a href="#menu">Menú</a>
+            <a href="#elige">¿Indeciso?</a>
+            <a href="#pedido">Pedido a Domicilio</a>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menú y Precios</h2>
+            <div class="menu-list" id="menu-list">
+                <!-- El menú se llena dinámicamente -->
+            </div>
+        </section>
+
+        <section id="elige">
+            <h2>¿No sabes qué pedir? ¡Déjanos ayudarte!</h2>
+            <button onclick="eligePorMi()">Elige por mí</button>
+            <div id="combo-sugerido"></div>
+        </section>
+
+        <section id="pedido">
+            <h2>Pedido a Domicilio</h2>
+            <form id="pedido-form">
+                <label>Nombre: <input type="text" name="nombre" required></label>
+                <label>Dirección: <input type="text" name="direccion" required></label>
+                <label>Teléfono: <input type="tel" name="telefono" required></label>
+                <label>Selecciona tus productos:
+                    <select name="productos" id="productos-select" multiple required></select>
+                </label>
+                <button type="submit">Hacer pedido y pagar</button>
+            </form>
+            <div id="pago-exito"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 El Rinconcito Son</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
