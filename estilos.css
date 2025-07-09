@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+header {
+    background: #c62828;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.menu-item {
+    background: #ffe0b2;
+    padding: 1em;
+    border-radius: 8px;
+    flex: 1 1 180px;
+    min-width: 180px;
+    max-width: 240px;
+    box-shadow: 2px 2px 8px #0001;
+}
+
+#elige {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#combo-sugerido {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin: 1em 0 .5em 0;
+}
+
+input, select, button {
+    padding: .5em;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+button {
+    background: #c62828;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b71c1c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    color: #999;
+}
